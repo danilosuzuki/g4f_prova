@@ -1,0 +1,53 @@
+nav, .nav-link, .offcanvas-body, .offcanvas-header{
+    background-color: #07456c;
+    color:white;
+    border-color: #07456c;
+}
+
+.g4f{
+    color:#07456c;
+}
+
+.serie-image{
+    background-color: #07456c;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#card {
+    left: -2560px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slide-in {
+    transition-timing-function: ease-in;
+    animation-name: slide-in;
+}
+  
+.slide-out {
+    animation-name: slide-out;
+    transition-timing-function: ease-out;
+}
+  
+
+@keyframes slide-in {
+    0% {
+      left: -2560px;
+    }
+    100% {
+      left: calc(50% - 200px);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+      left: calc(50% - 200px);
+    }
+    100% {
+      left: 2560px;
+    }
+}
+  

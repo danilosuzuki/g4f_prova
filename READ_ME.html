@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>READ ME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <section>
+        <div class="container">
+            <h1>Informações iniciais para configuração</h1>
+            <ol>
+                <li>Abra o cmd (terminal) na pasta prova</li>
+                <li>Certifique-se de ter o composer instalado na sua máquina. Caso não tenha baixe <a href="https://getcomposer.org/download/">aqui</a></li>
+                <li>Execute e cerifique-se de estar funcionando algum servidor web como Apache. <a href="https://www.apachefriends.org/download.html">Xampp</a> é recomendado</li>
+                <li>Rode o comando <code>composer install</code> esse processo pode demorar alguns minutos.</li>
+                <li>Certifique-se que o laravel foi instalado com sucesso rodando o comando <code>php artisan</code></li>
+                <li>Caso o laravel esteja instalado, rode o comando <code>php artisan migrate</code>. Será perguntado se deseja criar a base de dados. Digite 'yes'.</li>
+                <li>Após a base criada popule com o comando <code>php artisan db:seed --class=Questao3Seeder</code>. Caso deseje alterar a quantidade de itens a serem populados na base de dados altere no arquivo 'Questao3Seeder.php'. Como padrão são criados 10 séries, e são gerados 30 intervalos e atrelados aleatoriamente entre as séries geradas.</li>
+                <li>Caso deseje rode o comando <code>php artisan test</code> para executar os testes das 3 questões</li>
+                <li>O sistema se encontra pronto para uso. Rode o comando <code>php artisan serve</code></li>
+            </ol>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
