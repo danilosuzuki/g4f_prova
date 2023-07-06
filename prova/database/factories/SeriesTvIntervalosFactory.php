@@ -23,10 +23,10 @@ class SeriesTvIntervalosFactory extends Factory
     $horario = fake()->time(); // Gerar valores aleatórios para e horario
 
     // Verificar se já existe um intervalo com os mesmos valores de dia_da_semana e horario para a série de TV
-    $temSerie = SeriesTvIntervalos::leftjoin('series_tv','series_tv.id','=','series_tv_intervalo.id_serie_tv')
+    $temSerie = SeriesTvIntervalos::leftjoin('series_tv','series_tv.id','=','series_tv_intervalos.id_serie_tv')
         ->where('series_tv.canal',$serieTV->canal)
-        ->where('series_tv_intervalo.dia_da_semana', $diaDaSemana)
-        ->where('series_tv_intervalo.horario', $horario)
+        ->where('series_tv_intervalos.dia_da_semana', $diaDaSemana)
+        ->where('series_tv_intervalos.horario', $horario)
         ->exists();
 
     
@@ -34,10 +34,10 @@ class SeriesTvIntervalosFactory extends Factory
         $diaDaSemana = fake()->numberBetween(1, 7);
         $horario = fake()->time();
         // Verificar se já existe um intervalo com os mesmos valores de dia_da_semana e horario para a série de TV
-        $temSerie = SeriesTvIntervalos::leftjoin('series_tv','series_tv.id','=','series_tv_intervalo.id_serie_tv')
+        $temSerie = SeriesTvIntervalos::leftjoin('series_tv','series_tv.id','=','series_tv_intervalos.id_serie_tv')
             ->where('series_tv.canal',$serieTV->canal)
-            ->where('series_tv_intervalo.dia_da_semana', $diaDaSemana)
-            ->where('series_tv_intervalo.horario', $horario)
+            ->where('series_tv_intervalos.dia_da_semana', $diaDaSemana)
+            ->where('series_tv_intervalos.horario', $horario)
             ->exists();
     }
 

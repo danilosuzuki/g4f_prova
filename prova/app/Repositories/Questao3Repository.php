@@ -52,7 +52,7 @@ class Questao3Repository implements Questao3Interface
                 ->orderBy('series_tv_intervalos.horario')
                 ->first();//Organizo e pego a model
             $incremento++;//Incremento o contador
-        }while($proxima == null && $incremento<=7);// Condição de parada
+        }while($proxima == null && $incremento<=8);// Condição de parada
         return $proxima->load('serie');//Retorna objeto fraco + objeto forte
     }
     
